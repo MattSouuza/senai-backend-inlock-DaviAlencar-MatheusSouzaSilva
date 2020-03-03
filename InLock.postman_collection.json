@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "8950ee8a-9e67-4948-972d-49f66256a576",
+		"name": "InLock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Jogo.Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTgzMjY1MzExLCJpc3MiOiJTZW5haS5JbkxvY2suV2ViQXBpIiwiYXVkIjoiU2VuYWkuSW5Mb2NrLldlYkFwaSJ9.tYPT2EFrWZdE-3CVJf2_L3gNtOP5zTr2iz5yL4YbXQI\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"NomeJogo\" : \"Justa Causa\",\n\t\"Descricao\" : \"Um jogo em terceira pessoa onde o caos é causado pelo jogador\",\n\t\"DataLancamento\" : \"27/05/2002\",\n\t\"Valor\" : 189.99,\n\t\"IdEstudio\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/Jogo",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Jogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login.Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTgzMjY1OTQ2LCJpc3MiOiJTZW5haS5JbkxvY2suV2ViQXBpIiwiYXVkIjoiU2VuYWkuSW5Mb2NrLldlYkFwaSJ9.8PcD-Nr26It9EGEyCPvxa5r6i5cvjcaIQPTHaEaqdnU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"admin@admin.com\",\n\t\"senha\" : \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/Login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jogo.Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTgzMjY1OTQ2LCJpc3MiOiJTZW5haS5JbkxvY2suV2ViQXBpIiwiYXVkIjoiU2VuYWkuSW5Mb2NrLldlYkFwaSJ9.8PcD-Nr26It9EGEyCPvxa5r6i5cvjcaIQPTHaEaqdnU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/Jogo",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Jogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario.Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/Usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

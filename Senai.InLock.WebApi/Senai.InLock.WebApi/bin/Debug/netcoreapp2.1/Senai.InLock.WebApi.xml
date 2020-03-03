@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.InLock.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.InLock.WebApi.Controllers.EstudioController.Get">
+            <summary>
+            Lista todos os estúdios
+            </summary>
+            <returns>Retorna uma lista de estúdios</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Controllers.JogoController.Get">
+            <summary>
+            Lista todos os jogos
+            </summary>
+            <returns>Retorna uma lista de jogos</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Controllers.JogoController.Post(Senai.InLock.WebApi.Domains.JogoDomain)">
+            <summary>
+            Cadastra um novo jogo
+            </summary>
+            <param name="jogoNovo">Objeto jogoNovo que será cadastrado</param>
+            <returns>Retorna um BadRequest - 400, ou um Created - 201 se cadastrado com sucesso</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Controllers.LoginController.Post(Senai.InLock.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Efetua o login de um usuário
+            </summary>
+            <param name="login">O objeto login contêm email e senha como parâmetros</param>
+            <returns>Retorna um token se o email e senha estiverem corretos ou retorna BadRequest - 400</returns>
+        </member>
+        <member name="M:Senai.InLock.WebApi.Controllers.UsuarioController.Get">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuarios</returns>
+        </member>
+    </members>
+</doc>
